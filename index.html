@@ -300,8 +300,8 @@ End image carousel -->
           <!-- StableAnimator is based on the commonly used SVD following previous works. A reference image is processed through the diffusion model via three pathways: (1) Transformed into a latent code by a frozen VAE Encoder. The latent code is duplicated to match video frames, then concatenated with main latents. (2) Encoded by the CLIP Image Encoder to obtain image embeddings, which are fed to each cross-attention block of a denoising U-Net and our Face Encoder, respectively, to modulate the synthesized appearance. (3) Input to Arcface to gain face embeddings, which are subsequently refined for further alignment via our Face Encoder. Refined face embeddings are then fed to the denoising U-Net. A PoseNet with a similar architecture as AnimateAnyone extracts the features of the pose sequence, which are then added to the noisy latents. We replace the original input video frames with random noise during inference, while the other inputs stay the same. We propose a novel HJB-equation-based face optimization to enhance ID consistency and eliminate reliance on third-party post-processing tools. It integrates the solution process of the HJB equation into the denoising, allowing optimal gradient direction toward high ID consistency. -->
         </p>
         <div class="columns is-centered">
-            <!-- <img src="static/images/Figure_3_17_ages_emotions_gender_races_fixed.png" alt="codata_dataset.png" style="max-width: 900px"/> -->
-            <img src="static/images/Figure_3_6_ages_emotions_gender_races.jpg" alt="codata_dataset.png" style="max-width: 900px"/>
+            <img src="static/images/Figure_3_17_ages_emotions_gender_races_fixed.png" alt="codata_dataset.png" style="max-width: 900px"/>
+            <!-- <img src="static/images/Figure_3_6_ages_emotions_gender_races.jpg" alt="codata_dataset.png" style="max-width: 900px"/> -->
         </div>
        
         <p>
